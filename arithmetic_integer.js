@@ -1,1 +1,26 @@
-const readline_sync 
+const readlineSync = require('readline-sync');
+console.log('Enter your first number:');
+let firstNumber = Number(readlineSync.prompt());
+
+console.log('Enter your second number:');
+let secondNumber = Number(readlineSync.prompt());
+
+console.log(
+  `==> ${firstNumber} + ${secondNumber} = ${firstNumber + secondNumber}`,
+);
+
+console.log(
+  `==> ${firstNumber} - ${secondNumber} = ${firstNumber - secondNumber}`,
+);
+
+console.log(
+  `==> ${firstNumber} / ${secondNumber} = ${firstNumber / secondNumber}`,
+);
+
+console.log(
+  `==> ${firstNumber} % ${secondNumber} = ${firstNumber % secondNumber}`,
+);
+
+console.log(
+  `==> ${firstNumber} ** ${secondNumber} = ${firstNumber ** secondNumber}`,
+);
